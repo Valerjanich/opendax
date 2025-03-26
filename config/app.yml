@@ -1,20 +1,20 @@
 ---
 app:
-  name: OpenDAX
-  domain: app.local
+  name: eXtotrade
+  domain: extotrade.com
   subdomain: www
   show_landing: true
 render_protect: false
 csrfEnabled: false
 ssl:
-  enabled: false
-  email: support@example.com
+  enabled: true
+  email: exchangetotrade@gmail.com
 updateVersions: false
 images:
   peatio: quay.io/openware/peatio:2.6.48
-  barong: quay.io/openware/barong:2.6.44
-  frontend: quay.io/openware/baseapp:2.6.24
-  tower: quay.io/openware/tower:2.6.66
+  barong: quay.io/openware/barong:2.6.46
+  frontend: custom/frontend:2.3.25
+  tower: quay.io/openware/tower:2.6.80
   rango: quay.io/openware/rango:2.6.1
 finex:
   enabled: false
@@ -60,13 +60,13 @@ captcha:
   siteKey: changeme
   secretKey: changeme
 smtp:
-  host: smtp.sendgrid.net
-  port: 2525
+  host: smtp.gmail.com
+  port: 587
   user: apikey
   password: changeme
-  sender_email: noreply@barong.io
-  sender_name: Postmaster
-  sender_logo: https://storage.googleapis.com/public_peatio/logo.png
+  sender_email: exchangetotrade@gmail.com
+  sender_name: eXtotrade - Exchange to Trade!
+  sender_logo: https://cdn.extotrade.com/logo.png
 wallets:
   eth:
   - kind: deposit
